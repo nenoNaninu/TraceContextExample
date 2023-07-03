@@ -236,4 +236,4 @@ ServiceC
 
 ## Visual Studio のおすすめ設定
 
-![image](https://github.com/nenoNaninu/TraceContextExample/assets/27144255/2b928fc7-c536-4fd9-8e20-727b8df53d0c)
+![image](https://github.com/nenoNaninu/TraceContextExample/assets/27144255/fb2fa1db-e6ec-4a23-b052-3ac1ebb4adda)
