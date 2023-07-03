@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>c184b72d-e713-43d4-beb5-1e08ec25dcf8</UserSecretsId>
+        <InvariantGlobalization>true</InvariantGlobalization>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.7" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+        <Compile Include="..\ServiceA\Diagnostics\ParentContextPropagator.cs" LinkBase="Diagnostics" />
+        <Compile Include="..\ServiceA\Diagnostics\HttpMessageHandlerActivityOvserver.cs" LinkBase="Diagnostics" />
+    </ItemGroup>
+
+</Project>
