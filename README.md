@@ -1,5 +1,9 @@
 # TraceContextExample
 
+W3C Trace Context 等についての詳細はブログに。
+
+[【C#】ASP.NET Core と W3C Trace Context とお手軽ロギング。](https://blog.neno.dev/entry/2023/07/04/181843)
+
 ## Table of Contents
 - [準備](#準備)
   - [Program.cs](#programcs)
