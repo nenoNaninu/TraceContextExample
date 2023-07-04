@@ -48,6 +48,11 @@ builder.Services.AddProblemDetails();
 
 var app = builder.Build();
 
+// HttpMessageHandlerActivityOvserver は自前で実装したクラス。
+// https://github.com/nenoNaninu/TraceContextExample/blob/main/src/ServiceA/Diagnostics/HttpMessageHandlerActivityOvserver.cs
+var loggerFactory = app.Services.GetService<ILoggerFactory>()!;
+DiagnosticListener.AllListeners.Subscribe(new HttpMessageHandlerActivityOvserver(loggerFactory));
+
 // HTTP リクエストをロギングするためのミドルウェア
 app.UseHttpLogging();
 // 未処理の例外をハンドリングするためのミドルウェア
