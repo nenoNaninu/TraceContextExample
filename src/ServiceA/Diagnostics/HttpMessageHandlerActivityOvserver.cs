@@ -53,7 +53,7 @@ class HttpMessageHandlerActivityOvserver : IObserver<DiagnosticListener>
 
         public void OnNext(KeyValuePair<string, object?> keyValuePair)
         {
-            _logger.LogInformation("Received activity event from HttpMessageHandler. Event name is {name}.", keyValuePair.Key);
+            _logger.LogInformation("Received activity event from HttpMessageHandler. Event name is {EventName}.", keyValuePair.Key);
         }
     }
 }
